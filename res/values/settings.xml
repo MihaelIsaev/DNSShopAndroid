@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- HTTP -->
+    <string name="http_mode"			>mode</string>
+    <string name="http_mode_category"	>category</string>
+    <string name="http_mode_items"		>items</string>
+    <string name="http_mode_request"	>request</string>
+    <string name="http_mode_reg"		>reg</string>
+    <string name="http_mode_orders"		>orders</string>
+    <string name="http_cat"				>cat</string>
+    <string name="http_dt"				>dt</string>
+    <string name="http_rq"				>rq</string>
+    <string name="http_uid"				>Uid</string>
+    <string name="http_ver"				>VER</string>
+    <string name="http_card"			>card</string>
+    <string name="http_hash"			>hash</string>
+    <string name="http_res"				>res</string>
+    <string name="http_mes"				>mes</string>
+    <string name="http_result"			>result</string>
+    <string name="http_curdate"			>CurDate</string>
+    
+    <string name="root_id"		>0</string>
+    <string name="valute_rur"	>р.</string>
+    <string name="AdId"			>a14f6483d45ee32</string>
+</resources>

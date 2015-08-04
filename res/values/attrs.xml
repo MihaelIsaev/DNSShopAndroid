@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="background" format="reference" />
+    <attr name="bottomTabHost" format="reference" />
+    <attr name="bottomTabHostButton" format="reference" />
+    <attr name="homeButton" format="reference" />
+    <attr name="button" format="reference" />
+</resources>

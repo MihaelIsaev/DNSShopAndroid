@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/scrollView"
+       android:layout_weight="0"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:background="@android:color/transparent"
+       android:cacheColorHint="#ff087ccd" >
+       
+       <RelativeLayout
+	        android:id="@+id/listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/transparent"
+	        android:orientation="vertical" >
+        
+       <TextView
+	        android:id="@+id/city"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:textColor="#F0F0F0"
+	        android:textSize="25dp"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+       
+       <TextView
+	        android:id="@+id/phone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/city"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:textColor="#F0F0F0"
+	        android:textSize="25dp"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+		    
+	    <Button
+	        android:id="@+id/buttonShops"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/inSearch"
+	        android:text="@string/buttonHomeShops"
+	        style="?homeButton" />
+	
+	    <Button
+	        android:id="@+id/buttonCatalog"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/buttonShops"
+	        android:text="@string/buttonHomeCatalog"
+	        style="?homeButton" />
+	    
+	    <Button
+	        android:id="@+id/buttonContact"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/buttonCatalog"
+	        android:text="@string/buttonHomeContact"
+	        style="?homeButton" />
+	    
+	    <EditText
+	        android:id="@+id/inSearch"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/phone"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:padding="10dp"
+	        android:maxLines="1"
+	        android:inputType="text"
+	        android:ems="10"
+	        android:background="@drawable/input_search"
+	        android:hint="@string/inputSearchHint" />
+	
+	    <ImageView
+	        android:id="@+id/dosearch"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/inSearch"
+	        android:layout_toRightOf="@+id/inSearch"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:contentDescription="@string/app_name"
+	        android:src="@drawable/search" />
+
+	    <ProgressBar
+	        android:id="@+id/searchProgress"
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:layout_marginRight="6dp"
+	        android:layout_marginTop="4dp"
+	        android:layout_alignTop="@+id/inSearch"
+	        android:layout_toLeftOf="@+id/inSearch"
+	        android:visibility="invisible" />
+           
+   	</RelativeLayout>
+       
+</ScrollView>

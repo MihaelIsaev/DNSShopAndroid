@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:background="@android:color/black"
+	android:focusableInTouchMode="true" >
+	
+    <LinearLayout 
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentLeft="true"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    style="?background" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_weight="0"
+	        android:background="#99000000" >
+	        
+	        <com.google.ads.AdView android:id="@+id/adView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:background="@android:color/transparent"
+			ads:adUnitId="@string/AdId"
+			ads:adSize="BANNER" />
+	        
+	    </LinearLayout>
+	    
+	    
+	    <LinearLayout
+	        android:id="@+id/topLine"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:orientation="horizontal"
+	        android:background="@drawable/background_top_line"
+	        android:visibility="gone" >
+	        
+	        <Button
+	            android:id="@+id/buttonBack"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_weight="0"
+	            android:layout_marginLeft="5dp"
+	            android:background="@drawable/button_back"
+	            android:visibility="invisible" />
+	        
+	        <Button
+	            android:id="@+id/buttonFilter"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_weight="0"
+	            android:layout_marginLeft="5dp"
+	            android:background="@drawable/button_filter"
+	            android:visibility="invisible" />
+	        
+	        <Button
+	            android:id="@+id/buttonAccept"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_weight="0"
+	            android:layout_marginLeft="5dp"
+	            android:background="@drawable/button_accept"
+	            android:visibility="invisible" />
+	        
+	        <Button
+	            android:id="@+id/buttonDiscard"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_weight="0"
+	            android:layout_marginLeft="5dp"
+	            android:background="@drawable/button_discard"
+	            android:visibility="invisible" />
+	        
+	        <Button
+	            android:id="@+id/buttonSave"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_weight="0"
+	            android:layout_marginLeft="5dp"
+	            android:background="@drawable/button_save"
+	            android:visibility="invisible" />
+	        
+	        <Button
+	            android:id="@+id/buttonDelete"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_weight="0"
+	            android:layout_marginLeft="5dp"
+	            android:background="@drawable/button_delete"
+	            android:visibility="invisible" />
+	        
+	        <Button
+	            android:id="@+id/buttonCopy"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_weight="0"
+	            android:layout_marginLeft="5dp"
+	            android:background="@drawable/button_copy"
+	            android:visibility="invisible" />
+	        
+	        <Button
+	            android:id="@+id/buttonLink"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_weight="0"
+	            android:layout_marginLeft="5dp"
+	            android:background="@drawable/button_link"
+	            android:visibility="invisible" />
+	        
+	        <TextView
+	            android:id="@+id/title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="10dp"
+	            android:textColor="#F0F0F0"
+	            android:textColorHighlight="#bddcf2"
+	            android:textSize="14dp" />
+	        
+	        <LinearLayout
+	            android:layout_weight="0"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+	            <ProgressBar
+			        android:id="@+id/topProgress"
+			        android:layout_weight="0"
+			        android:layout_width="20dip"
+			        android:layout_height="20dip"
+			        android:layout_marginTop="2dp"
+			        android:layout_marginBottom="2dp"
+			        android:layout_gravity="right"
+			        android:layout_marginRight="5dp"
+			        android:visibility="invisible" />
+		        <TextView
+		            android:id="@+id/city"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0"
+		            android:layout_gravity="center_vertical|right"
+		            android:layout_marginRight="5dp"
+		            android:text=""
+		            android:textColor="#F0F0F0"
+		            android:textColorHighlight="#bddcf2"
+		            android:textSize="12dp" />
+		    </LinearLayout>
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/selectCity"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/search"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/shops"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/home"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" />
+	    
+	    <LinearLayout
+	        android:id="@+id/catalog"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/cart"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/options"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/items"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/filters"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/filter"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/item"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/reviews"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/comments"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="gone" />
+	    
+	    <LinearLayout
+	        android:id="@+id/tab_host"
+	        android:layout_width="match_parent"
+	        android:layout_height="60dip"
+	        android:layout_weight="0"
+	        android:orientation="horizontal"
+	        android:gravity="center_horizontal"
+	        android:visibility="gone"
+	        style="?bottomTabHost" >
+	
+	        <LinearLayout
+		        android:id="@+id/tab_home"
+		        android:layout_width="80dp"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="12dp"
+		        android:paddingRight="12dp"
+		        android:paddingTop="2dp"
+		        android:orientation="vertical"
+		        android:gravity="bottom"
+		        android:background="@drawable/tab_active" >
+	        	<ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="5dp"
+		            android:layout_gravity="center"
+		            android:background="@drawable/tab_home"
+		            android:contentDescription="@string/item_image_description" />
+				<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginBottom="2dp"
+		            android:layout_gravity="center"
+		            android:text="@string/tab_home"
+		            style="?bottomTabHostButton" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+		        android:id="@+id/tab_catalog"
+		        android:layout_width="80dp"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="12dp"
+		        android:paddingRight="12dp"
+		        android:paddingTop="2dp"
+		        android:orientation="vertical"
+		        android:gravity="bottom"
+		        android:background="@drawable/tab_passive" >
+	        	<ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="9dp"
+		            android:layout_marginBottom="2dp"
+		            android:layout_gravity="center"
+		            android:background="@drawable/tab_catalog"
+		            android:contentDescription="@string/item_image_description" />
+				<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginBottom="2dp"
+		            android:layout_gravity="center"
+		            android:text="@string/tab_catalog"
+		            style="?bottomTabHostButton" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+		        android:id="@+id/tab_cart"
+		        android:layout_width="80dp"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="12dp"
+		        android:paddingRight="12dp"
+		        android:paddingTop="2dp"
+		        android:orientation="vertical"
+		        android:gravity="bottom"
+		        android:background="@drawable/tab_passive" >
+	        	<ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="5dp"
+		            android:layout_gravity="center"
+		            android:background="@drawable/tab_cart"
+		            android:contentDescription="@string/item_image_description" />
+				<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginBottom="2dp"
+		            android:layout_gravity="center"
+		            android:text="@string/tab_cart"
+		            style="?bottomTabHostButton" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+		        android:id="@+id/tab_more"
+		        android:layout_width="80dp"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="12dp"
+		        android:paddingRight="12dp"
+		        android:paddingTop="4dp"
+		        android:orientation="vertical"
+		        android:gravity="bottom"
+		        android:background="@drawable/tab_passive" >
+	        	<ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:background="@drawable/tab_more"
+		            android:contentDescription="@string/item_image_description" />
+				<TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginBottom="2dp"
+		            android:layout_gravity="center"
+		            android:text="@string/tab_options"
+		            style="?bottomTabHostButton" />
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+    <TextView
+        android:id="@+id/startUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:text="@string/loading"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

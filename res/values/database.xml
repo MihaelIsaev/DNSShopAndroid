@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tables -->
+    
+    <string name="tbl_category"			>`Category`</string>
+    <string name="tbl_items"			>`Items`</string>
+    <string name="tbl_basket"			>`Settings`</string>
+    
+    
+    <!-- Cells -->
+    <string name="cell_id_parent"		>IdParent</string>
+    <string name="cell_id"				>Id</string>
+    <string name="cell_name"			>Name</string>
+    <string name="cell_last_update"		>LastUpdate</string>
+    <string name="cell_status"			>Code</string>
+    <string name="cell_status_code"		>Description</string>
+    <string name="cell_articul"			>Features</string>
+</resources>

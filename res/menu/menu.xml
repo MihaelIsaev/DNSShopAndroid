@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/goSearch"
+        android:padding="10dp"
+		android:gravity="center"
+		android:textColor="#F0F0F0"
+		android:textSize="20dp"
+		android:background="@drawable/bottom_menu_row"
+        android:title="Найти" />
+    
+    <item android:id="@+id/goList"
+        android:padding="10dp"
+		android:gravity="center"
+		android:textColor="#F0F0F0"
+		android:textSize="20dp"
+		android:background="@drawable/bottom_menu_row"
+        android:title="Список покупок" />
+    
+    <item android:id="@+id/goHome"
+        android:padding="10dp"
+		android:gravity="center"
+		android:textColor="#F0F0F0"
+		android:textSize="20dp"
+		android:background="@drawable/bottom_menu_row"
+        android:title="На главную" />
+    
+    <item android:id="@+id/goBack"
+        android:padding="10dp"
+		android:gravity="center"
+		android:textColor="#F0F0F0"
+		android:textSize="20dp"
+		android:background="@drawable/bottom_menu_row"
+        android:title="Назад" />
+</menu>

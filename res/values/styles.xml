@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	 <style name="categoryList" parent="@android:style/Widget.ListView">
+	 	<item name="android:background">#2F3F66</item>
+	 	<item name="android:fastScrollEnabled">true</item>
+	 </style>
+	 
+	 <style name="bottomTabHostButton">
+	 	<item name="android:textColor">#F0F0F0</item>
+		<item name="android:textColorHighlight">#bddcf2</item>
+		<item name="android:textSize">10dp</item>
+	 </style>
+	 
+	 <style name="button_red">
+	 	<item name="android:gravity">center</item>
+	    <item name="android:padding">10dp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:textColor">#FFFFFF</item>
+	    <item name="android:background">@drawable/button_red_selector</item>
+	 </style>
+	 
+	 <!-- BLACK STYLES -->
+	 	 
+	 <style name="bottomTabHost_black">
+	 	<item name="android:background">@drawable/tab_host_tile_grey</item>
+	 </style>
+	 <style name="background_black">
+	 	<item name="android:background">@drawable/tiled_background_dark</item>
+	 </style>
+	 <style name="homeButton_black">
+	 	<item name="android:layout_width">200dp</item>
+	 	<item name="android:layout_centerHorizontal">true</item>
+	    <item name="android:layout_marginTop">23dp</item>
+	    <item name="android:paddingTop">10dp</item>
+	    <item name="android:paddingBottom">10dp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:textColor">#FFFFFF</item>
+	    <item name="android:background">@drawable/button_black_selector</item>
+	    <item name="android:textSize">20dp</item>
+	 </style>
+	 
+	 <style name="button_black">
+	 	<item name="android:gravity">center</item>
+	    <item name="android:padding">10dp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:textColor">#FFFFFF</item>
+	    <item name="android:background">@drawable/button_black_selector</item>
+	 </style>
+	 
+	 <!-- BLUE STYLES -->
+	 
+	 <style name="bottomTabHost_blue">
+	 	<item name="android:background">@drawable/tab_host_tile_cyan</item>
+	 </style>
+	 <style name="background_blue">
+	 	<item name="android:background">@drawable/background_light_gradient</item>
+	 </style>
+	 <style name="homeButton_blue">
+	 	<item name="android:layout_width">200dp</item>
+	 	<item name="android:layout_centerHorizontal">true</item>
+	    <item name="android:layout_marginTop">23dp</item>
+	    <item name="android:paddingTop">10dp</item>
+	    <item name="android:paddingBottom">10dp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:textColor">#FFFFFF</item>
+	    <item name="android:background">@drawable/button_blue_selector</item>
+	    <item name="android:textSize">20dp</item>
+	 </style>
+	 
+	 <style name="button_blue">
+	 	<item name="android:gravity">center</item>
+	    <item name="android:padding">10dp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:textColor">#FFFFFF</item>
+	    <item name="android:background">@drawable/button_blue_selector</item>
+	 </style>
+</resources>

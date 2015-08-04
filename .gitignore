@@ -1,0 +1,15 @@
+.DS_Store
+._git/*
+.classpath
+.project
+
+proguard-project.txt
+project.properties
+
+bin/*
+gen/*
+
+
+src/.DS_Store
+res/.DS_Store
+res/drawable/.DS_Store

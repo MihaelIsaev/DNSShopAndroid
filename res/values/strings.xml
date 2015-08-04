@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Загрузка программы -->
+    <string name="loading"					>пожалуйста подождите</string>
+    <string name="titleCategory"			>Категории</string>
+    <string name="titleCity"				>Выберите Ваш город</string>
+    <string name="app_name"					>DNS Shop</string>
+    <string name="domain_prefix"			>http://</string>
+    <string name="domain_name"				>mihaelisaev.com</string>
+    <string name="domain_script"			>/dns_v2.php</string>
+    <string name="domain_test"				>/test.php</string>
+    <string name="item_image_description"	>image</string>
+    
+    <string name="clipboard_pass_message"	>Информация о товаре скопирована в буфер обмена</string>
+    <string name="clipboard_link_message"	>Ссылка на страницу товара скопирована в буфер обмена</string>
+    <string name="comments_start_loading"	>Загрузка комментариев с сервера</string>
+    <string name="comments_start_parsing"	>Обработка комментариев с сервера</string>
+    <string name="comments_no_comments"		>Нет комментариев</string>
+    <string name="comments_not_loaded"		>Комментарии не загрузились</string>
+    
+    <string name="reviews_no_reviews"		>Нет отзывов</string>
+    
+    <string name="item_loading_fail"		>Неудалось загрузить информацию</string>
+    <string name="item_to_cart"				>В закладки</string>
+    <string name="item_from_cart"			>Из закладок</string>
+    <string name="item_description"			>Описание</string>
+    
+    <!-- Табы -->
+    <string name="tab_home"					>Главная</string>
+    <string name="tab_catalog"				>Каталог</string>
+    <string name="tab_cart"					>Закладки</string>
+    <string name="tab_options"				>Настройки</string>
+    
+    <!-- Кнопки -->
+    <string name="buttonHomeContact"		>Написать автору</string>
+    <string name="buttonHomeShops"			>Магазины</string>
+    <string name="buttonHomeCatalog"		>Каталог</string>
+    <string name="buttonBack"				>Назад</string>
+    <string name="buttonChangeCity"			>Изменить город</string>
+    <string name="buttonClearCache"			>Очистить кэш</string>
+    <string name="buttonUpdateCityes"		>Обновить города</string>
+    <string name="buttonSwitchPreviews"		>Отображать превью товаров</string>
+    <string name="buttonBlackBackDescr"		>Черный фон в описании</string>
+    <string name="buttonSortBy"				>Сортировать</string>
+    <string name="buttonChangeSkin"			>Скин</string>
+    <string name="buttonReviews"			>Отзывы</string>
+    <string name="buttonComments"			>Комментарии</string>
+    <string name="buttonRetry"				>Повторить</string>
+    
+    <string name="reviewPlus"				>Достоинства</string>
+    <string name="reviewMinus"				>Недостатки</string>
+    <string name="reviewComment"			>Комментарий</string>
+    
+    <string name="inputSearchHint"			>Поиск товара</string>
+    <string name="emptyCartCantSave"		>Пусто - нечего сохранять :)</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basketRowLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:background="@drawable/item_row_light" >
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="0"
+        android:scaleType="fitCenter"
+        android:background="@android:color/white"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="2">
+    
+	    <TextView
+	        android:id="@+id/text"
+	        android:textColor="#a5c6e8"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginBottom="1dp"
+	        android:layout_marginLeft="5dp" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	        android:layout_weight="2">
+	        <RatingBar
+		        android:id="@+id/rating"
+		        style="?android:attr/ratingBarStyleSmall"
+		        android:progressDrawable="@drawable/raiting"
+		        android:numStars="5"
+		        android:focusable="false"
+		        android:layout_marginLeft="7dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="3dp"
+		        android:visibility="gone" />
+	        <TextView
+		        android:id="@+id/comments"
+		        android:textColor="#a5c6e8"
+		        android:textSize="11dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical"
+		        android:layout_marginBottom="3dp"
+		        android:layout_marginLeft="2dp" />
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="0">
+	    
+	    <TextView
+	        android:id="@+id/price"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:textColor="#a5c6e8" />
+	</LinearLayout>
+</LinearLayout>

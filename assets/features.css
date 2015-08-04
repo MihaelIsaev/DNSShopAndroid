@@ -1,0 +1,11 @@
+html{background-color:transparent;}
+body{background-color:transparent;color:#F0F0F0;}
+table{
+	border:0;
+	padding:0;
+	border-collapse:collapse;
+}
+.title{color:#f58220;}
+th{color:#f58220;padding-top:5px;}
+.primary td{border:1px solid rgba(149,149,149,0.7);padding:4px;font-weight:normal;}
+.secondary td{border:1px solid rgba(149,149,149,0.7);padding:4px;font-weight:normal;}

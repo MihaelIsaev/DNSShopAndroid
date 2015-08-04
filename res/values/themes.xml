@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme" parent="android:Theme.NoTitleBar">
+      <item name="bottomTabHostButton">@style/bottomTabHostButton</item>
+    </style>
+    
+    <style name="Theme.Black" parent="@style/Theme">
+      <item name="bottomTabHost">@style/bottomTabHost_black</item>
+      <item name="background">@style/background_black</item>
+      <item name="homeButton">@style/homeButton_black</item>
+      <item name="button">@style/button_black</item>
+    </style>
+
+    <style name="Theme.Blue" parent="@style/Theme">
+      <item name="bottomTabHost">@style/bottomTabHost_blue</item>
+      <item name="background">@style/background_blue</item>
+      <item name="homeButton">@style/homeButton_blue</item>
+      <item name="button">@style/button_blue</item>
+    </style>
+</resources>

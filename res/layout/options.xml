@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:cacheColorHint="#ff087ccd" >
+        
+        <LinearLayout
+	        android:id="@+id/listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+		        
+	            <LinearLayout 
+	                android:id="@+id/changeCityLinear"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/textlines" >
+	                
+	                <TextView
+			            android:id="@+id/changeCityText"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:textColor="#F0F0F0"
+			            android:padding="10dp"
+			            android:textSize="20dp"
+			            android:text="@string/buttonChangeCity" />
+	                
+	            </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:id="@+id/updateCityLinear"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/textlines" >
+	                
+	                <TextView
+			            android:id="@+id/updateCityText"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:textColor="#F0F0F0"
+			            android:padding="10dp"
+			            android:textSize="20dp"
+			            android:text="@string/buttonUpdateCityes" />
+	                
+	            </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:id="@+id/clearCacheLinear"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/textlines" >
+	                
+	                <TextView
+			            android:id="@+id/clearCacheText"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:textColor="#F0F0F0"
+			            android:padding="10dp"
+			            android:textSize="20dp"
+			            android:text="@string/buttonClearCache" />
+	                
+	            </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:id="@+id/changePreviewLinear"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:background="@drawable/textlines" >
+	                <CheckBox 
+		                android:id="@+id/changePreview"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dp"
+		                android:text="@string/buttonSwitchPreviews" />
+	            </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:id="@+id/changeDescroptionBackgroundLinear"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:background="@drawable/textlines"
+	                android:visibility="gone" >
+	                <CheckBox 
+		                android:id="@+id/changeDescriptionBackground"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dp"
+		                android:text="@string/buttonBlackBackDescr" />
+	            </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:id="@+id/changeSortLinear"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:background="@drawable/textlines" >
+	                <TextView
+			            android:id="@+id/text"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:textColor="#F0F0F0"
+			            android:padding="10dp"
+			            android:textSize="20dp"
+			            android:text="@string/buttonSortBy" />
+	                <Spinner 
+		                android:id="@+id/changeSort"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" />
+	            </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:id="@+id/changeSkinLinear"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:background="@drawable/textlines" >
+	                <TextView
+			            android:id="@+id/textSkin"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:layout_marginRight="75dp"
+			            android:textColor="#F0F0F0"
+			            android:padding="10dp"
+			            android:textSize="20dp"
+			            android:text="@string/buttonChangeSkin" />
+	                <Spinner 
+		                android:id="@+id/changeSkin"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" />
+	            </LinearLayout>
+	            
+	            <TextView
+			            android:id="@+id/sorryText"
+			            android:visibility="gone"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:textColor="#F0F0F0"
+			            android:padding="10dp"
+			            android:textSize="12dp"
+			            android:gravity="center"
+			            android:text="Приношу свои извинения за рекламу в платной версии, при обновлении не сняли соответствующий флаг. А т.к. времени не много, долго не заглядывал в отзывы. Еще раз приношу свои извинения. И спасибо за приобретение!" />
+    	
+        </LinearLayout>
+        
+</ScrollView>
